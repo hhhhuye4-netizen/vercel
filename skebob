@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skelebob Meme | Мем про Скелебоба</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(45deg, #2c3e50, #4a235a);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 20px;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 3px solid #ff9900;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff9900;
+            text-shadow: 3px 3px 0 #000;
+        }
+        
+        .meme-image {
+            width: 100%;
+            max-width: 500px;
+            border: 5px solid #ff9900;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+        
+        .meme-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .meme-text {
+            font-size: 1.8em;
+            margin: 20px 0;
+            padding: 15px;
+            background: linear-gradient(45deg, #ff6600, #ff9900);
+            border-radius: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 0 #000;
+        }
+        
+        .caption {
+            font-size: 1.2em;
+            margin-top: 20px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .skeleton-animation {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: dance 2s infinite;
+        }
+        
+        @keyframes dance {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .meme-text {
+                font-size: 1.4em;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Skelebob Dance 🎵</h1>
+        
+        <div class="skeleton-animation">💀🦴☠️</div>
+        
+        <img class="meme-image" src="https://i.imgur.com/9K1pW1a.png" alt="Skelebob Meme" onerror="this.src='https://placehold.co/500x500/333/white?text=Skelebob+Meme'">
+        
+        <div class="meme-text">
+            "Когда слышишь костяшки на 3 часа ночи"
+        </div>
+        
+        <div class="meme-text">
+            💀 Мои кости готовы к приключениям! 🦴
+        </div>
+        
+        <p class="caption">
+            *звук танцующих костей на фоне*<br>
+            doot doot 🎺
+        </p>
+    </div>
+    
+    <div class="footer">
+        © 2024 Skelebob Meme Factory | Spooky Edition
+    </div>
+
+    <script>
+        // Простая анимация для большего веселья
+        document.addEventListener('DOMContentLoaded', function() {
+            const texts = [
+                "Костяной танец активирован!",
+                "Spooky scary skeletons!",
+                "Мои кости звенят от радости!",
+                "Doot doot 🎺",
+                "Танцуем до рассвета! 💀"
+            ];
+            
+            let currentIndex = 0;
+            const memeTexts = document.querySelectorAll('.meme-text');
+            
+            setInterval(() => {
+                memeTexts.forEach((text, index) => {
+                    text.textContent = texts[(currentIndex + index) % texts.length];
+                });
+                currentIndex = (currentIndex + 1) % texts.length;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
