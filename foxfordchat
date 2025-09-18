@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoxfordBanda - Твой крутой Telegram-чат</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Шапка */
+        header {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .logo i {
+            color: #08c;
+            margin-right: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Основной контент */
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        /* Кнопка */
+        .tg-button {
+            display: inline-block;
+            background: #08c;
+            color: white;
+            padding: 18px 35px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .tg-button:hover {
+            background: #0066a6;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .tg-button i {
+            margin-right: 10px;
+        }
+
+        /* Преимущества */
+        .features {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #6ab04c;
+        }
+
+        .feature h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .tg-button {
+                padding: 15px 25px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fab fa-telegram"></i>FoxfordBanda
+            </div>
+            <div class="tagline">Самое уютное место в Telegram</div>
+        </header>
+
+        <section class="hero">
+            <h1>Присоединяйся к нашему комьюнити!</h1>
+            <p>Общение, мемы, поддержка, знакомства и многое другое. У нас всегда весело и интересно. Стань частью нашей банды!</p>
+            <a href="https://t.me/FoxfordBanda" class="tg-button" target="_blank">
+                <i class="fab fa-telegram"></i>Перейти в чат
+            </a>
+            <p>👉 Нас уже много и тебя ждут!</p>
+        </section>
+
+        <section class="features">
+            <h2>Почему именно мы?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-comments"></i>
+                    <h3>Живое общение</h3>
+                    <p>Всегда найдется, с кем поболтать на любую тему. Никакого одиночества!</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-laugh-beam"></i>
+                    <h3>Свежие мемы</h3>
+                    <p>Ежедневная порция юмора и смешного контента. Поднимаем настроение 24/7</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Нет токсичности</h3>
+                    <p>У нас уютная атмосфера и дружелюбное комьюнити без хейта</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift"></i>
+                    <h3>Конкурсы и ивенты</h3>
+                    <p>Регулярно проводим розыгрыши, игры и другие активности</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h2>Мы уже ждем именно тебя!</h2>
+            <p>Не откладывай на потом - присоединяйся к самой активной банде Telegram прямо сейчас</p>
+            <a href="https://t.me/FoxfordBanda" class="tg-button" target="_blank">
+                <i class="fab fa-telegram"></i>Вступить в чат
+            </a>
+        </section>
+
+        <footer>
+            <p>© 2024 FoxfordBanda | Самый лучший Telegram-чат</p>
+        </footer>
+    </div>
+</body>
+</html>
